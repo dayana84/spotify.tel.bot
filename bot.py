@@ -1,5 +1,6 @@
+import imghdr
+print("imghdr is available")
 import os
-import time
 import json
 import threading
 from telegram import Bot, Update
