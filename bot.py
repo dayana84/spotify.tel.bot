@@ -1,6 +1,10 @@
-import imghdr
-print("imghdr is available")
+try:
+    import imghdr
+except ModuleNotFoundError:
+    imghdr = None
+    print("imghdr not available, skipping image detection")
 import os
+import time
 import json
 import threading
 from telegram import Bot, Update
